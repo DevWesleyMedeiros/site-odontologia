@@ -1,0 +1,90 @@
+@media screen and (min-width: 769px) and (max-width: 1300px){
+    section.sessao1 > div.container_mosaico{
+        grid-template-columns: repeat(4,1fr); 
+    }
+    section.sessao5 > div.container_depoimentos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media  screen and (max-width:768px){
+    menu.menu_mobile{
+        display: block;
+        float: right;
+        padding: 4% 2%;
+    }
+    menu.menu_mobile > ul{
+        display: none;
+    }
+    header > nav > .menu_desktop{
+        display: none;
+    }
+    section.sessao1 > div.container_mosaico{
+        grid-template-columns: repeat(3,1fr); 
+    }
+    section.sessao5 > div.container_depoimentos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section.sessao2 > div.container_titulo_profissional{
+        width: 100%;
+        flex-direction: column;
+    }
+    section.sessao3 > div.container_videos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    section.sessao6 > div.container_form > form{
+        width: 100%;
+        padding: 0 2%;
+    }
+    footer > div.informacoes_empresa{
+        display: flex;
+        flex-direction: column;
+    }
+    section.sessao4 > div.container_tratamentos{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 2%;
+    }
+    section.sessao1 > div.container_box_servicos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.sessao1 > div.container_box_servicos > div.box_servico{
+        width: 60%;
+        z-index: 2;
+        position: relative;
+        top: 2%;
+    }
+    section.sessao1 > div.container_box_servicos > div.box_servico:nth-of-type(2):not(h2, p){
+        transform: scale(1, 2.5);
+        background-color: #688293;
+        width: 70%;
+        z-index: 1;
+    }
+    section.sessao1 > div.container_box_servicos > div.box_servico > h2, p{
+        transform: scale(1 / 0.5, 1 / 1.3);
+    }
+}
+@media screen and (max-width: 500px){
+    section.sessao1 > div.container_mosaico{
+        grid-template-columns: auto; 
+    }
+    section.sessao5 > div.container_depoimentos{
+        grid-template-columns: auto;
+    }  
+    menu.menu_mobile{
+        display: block;
+        float: right;
+        padding: 4% 2%;
+    }
+    menu.menu_mobile > ul{
+        display: none;
+    }
+    header > nav > .menu_desktop{
+        display: none;
+    }
+}   
